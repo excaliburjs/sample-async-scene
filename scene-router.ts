@@ -24,6 +24,7 @@ export class SceneRouter {
         if (scene && isAsyncScene(scene)) {
             if (!scene.isAsyncInitialized) {
                 await scene.onAsyncInitialize(this.engine);
+                scene.isAsyncInitialized = true;
             }
             this.engine.goToScene(sceneName);
         }
