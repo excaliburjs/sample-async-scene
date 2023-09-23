@@ -22,6 +22,7 @@ export class LoadingScene extends Scene implements AsyncScene {
         this.loader.backgroundColor = Color.Black.toHex();
         // this.loader.loadingBarPosition = vec(40, 270);
         this.loader.playButtonText = 'Let\'s Go!';
+        this.loader.suppressPlayButton = true;
 
     }
 
